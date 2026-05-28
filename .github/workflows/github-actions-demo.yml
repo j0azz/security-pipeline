@@ -17,7 +17,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "job's status is ${{ job.status }}."
   SAST:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "[ SAST ] - Static Analysis Security Testing stage
+    uses: j0azz/security-pipeline/.github/workflows/codeql.yml@mail
       
