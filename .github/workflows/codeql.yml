@@ -40,15 +40,17 @@ jobs:
       actions: read
       contents: read
 
+# js build: "uses: actions/setup-node@v4"
+
     strategy:
       fail-fast: false
       matrix:
         include:
           - language: javascript-typescript
-            build-mode: autobuild
+            build-mode: manual
       
           - language: java-kotlin
-            build-mode: autobuild
+            build-mode: manual
       
           - language: python
             build-mode: none
