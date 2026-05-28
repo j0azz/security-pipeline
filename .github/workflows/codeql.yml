@@ -44,7 +44,8 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix: [ javascript-typescript, java-kotlin, python, actions ]
+      matrix:
+        language: [javascript-typescript, python, actions, java]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
