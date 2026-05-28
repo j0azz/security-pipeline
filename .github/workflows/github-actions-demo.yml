@@ -24,6 +24,8 @@ jobs:
     permissions:
       actions: read
       security-events: write
+      contents: read
+      packages: read
   
   iac-checkov:
     name: IaC Security - Checkov
