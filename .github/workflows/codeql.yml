@@ -100,6 +100,6 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
-      fail-on-error: false
       with:
         category: "/language:${{matrix.language}}"
+        fail-on-error: false
