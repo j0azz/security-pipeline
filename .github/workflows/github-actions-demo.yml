@@ -19,6 +19,8 @@ jobs:
   
   SAST:
     uses: j0azz/security-pipeline/.github/workflows/codeql.yml@main
+    actions: read
+    security-events: write
   
   iac-checkov:
     name: IaC Security - Checkov
